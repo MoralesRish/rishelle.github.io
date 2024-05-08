@@ -1,0 +1,236 @@
+body {
+    background-color: var(--body);
+}
+
+
+#banner {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+    background-image: url('https://w0.peakpx.com/wallpaper/924/283/HD-wallpaper-fairy-tail-gray-lucy-fairy-tail-guild-natsu-wendy-erza.jpg');
+    background-size: cover;
+}
+
+:root {
+    --bg1: #270c02;
+    --bg2: rgb(87, 36, 6);
+    --body: rgba(209, 142, 104, 0.973);
+    --brand: #dc4b07;
+    --white: rgb(236, 183, 132);
+    --p: rgb(19, 8, 8);
+}
+
+/*Button*/
+.btn {
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    border-color: var(--brand);
+    color: var(--brand);
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.navbar #navbarNav .navlink.active {
+    color: var(--brand)
+}
+
+.navbar .navbar-link:hover {
+    color: var(--brand);
+}
+
+.h1 {
+    color: #f6f0f0;
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+.card {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card-hover {
+    background-color: var(--bg1);
+}
+
+.card:hover .card-title,
+.card-hover .card-text,
+.card:hover .btn {
+    color: #d44b19;
+}
+
+#cta {
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*pharallax effec*/
+    background-attachment: fixed;
+    /*pharallax effect / to remove set to normal*/
+    background-image: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 0.135)), url('https://fairytailgame.com/common/img/mv_logo.png');
+    min-height: 70vh;
+
+}
+
+.navbar{
+    background: linear-gradient(to bottom,hsla(36, 93%, 16%, 0.74), rgba(211, 137, 53, 0.877));
+}
+
+#reviews{
+    background-color: var(--white);
+}
+
+.testimonials{
+    background-color: var(--bg2);
+    padding: 30px;
+}
+
+.testimonials img{
+    width: 65px;
+    border-radius: 100px;
+    height: 65px;
+}
+
+.faq-section{
+    max-width: 800px;
+    margin: auto    ;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+}
+
+.faq-question{
+    background-color: #92856d;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ecf0f3;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-answer{
+    border-left: 3px solid var(--body);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #f8f9fa;
+}
+
+.faq-answer p{
+    margin-bottom: 0;
+}
+
+.accordion-botton:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--bg1);
+    background-color: var(--brand);
+}
+
+.faq-question :hover{
+    background-color: var(--brand);
+    color: var(--bg1);
+}
+
+.accordion-botton:after{
+    font-family: "Font Awesome Free";
+    content: "";
+    float: right;
+    font-weight: 900px;
+    margin-left: auto;
+}
+
+.acoordion-button[aria-expanded="true"]::after{
+    content:"";
+}
+
+.section{
+    font-family: "Audiowide", sans-serif;
+}
+
+#footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg1);
+}
+
+#footer ul.list-unstyled li a {
+    color: #ffffff;
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: var(--brand);
+}
+
+#reviews h2, #services h2 {
+    color: var(--bg1);
+}
+
+.btn-outline-light{
+    border-color: #dfafea !important;
+    color: #e0a6f0;
+}
+
+#footer h5{
+    color: var(--brand);
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width:767px){
+    section{
+        padding: 60px 10px;
+    }
+}
+
+.card{
+    margin-bottom: 30px;
+}
+
+#footer{
+    padding: 50px 20px;
+}
+
+.navbar .navbar-nav .nav-item .navbar-link:hover{
+    font-weight: bold;
+    color: #e0d6d2;
+    text-shadow: 0 0 20px #fcfcfc, 0 0 40px #ede9e7;
+    transition: all 0.4s ease;
+}
